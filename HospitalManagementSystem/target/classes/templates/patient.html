@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Patient</title>
+</head>
+<body>
+<p>Welcome to Patients' site</p><hr>
+<p> Please kindly fill up the form  to get registered!!</p>
+<div>
+<form action ="/postPatient" method="post">
+<p style=color:red> [[${message}]]</p>
+
+Name  <input type="text" name="fname" placeholder="First name"><br><br>
+       <input type="text" name="lname" placeholder="last name"><br><br>
+     
+Gender <input type="radio" name="gender"  value="male" > male
+       <input type="radio" name="gender" value="female" > female <br>
+  Phone <input type="number" name="phone"><br><br>
+  DOB <input type="date" name="dob" > <br><br>
+  Marial Status <input type="radio" name="status"  value="M"> M 
+		       <input type="radio" name="status" value="U"> U <br>
+		       <input type="radio" name="status" value="D" > D
+		       <input type="radio" name="status" value="LS" > LS <br><br>
+       Present Address <input type="text" name="paddress"><br><br>
+              Communication Address <input type="text" name="caddress"><br><br>
+              
+              Past Medical History <input type="checkbox" name="choice" value="Anemia"> Anemia 
+					              <input type="checkbox" name="choice" value="Asthma" > Asthma 
+					              <input type="checkbox" name="choice" value="Diabetes"> Diabetes <br>
+					              <input type="checkbox" name="choice" value="Cancer"> Cancer 
+					              <input type="checkbox" name="choice" value="ulcer"> Ulcer 
+					              <input type="checkbox" name="choice" value="Chickenpox"> Chickenpox <br>
+					              <!--  <input type="checkbox" name="choice" > Other <input type="text" name="other"><br><br>-->
+             Other Details <input type="text"  name="details"><br><br>
+             <input type="submit" value="Register">
+       
+       
+       
+  
+ 
+
+</form>
+</div>
+
+</body>
+</html>
